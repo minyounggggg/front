@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test9</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        table{
+            border-collapse: collapse; /*선바짝*/
+            margin: 50px;
+            background-color: blueviolet;
+        }
+        #tbl{
+            text-align: center;
+        }
+        th{
+            padding: 20px;
+        }
+        th, td{
+            border: 1px solid gray;
+            text-align: center;
+            padding: 20px;
+        }
+        tbl_main{
+            text-align: center;
+        }
+        .imgA{
+            border: 5px solid red;
+            margin: 50px;
+            padding: 30px;
+        }
+        .imgB{
+            border: 5px dotted rebeccapurple;
+            margin: 50px 100px 30px;
+            padding: 30px;
+        }
+        .imgC{
+            border-style: dashed;
+        }
+        .dd{
+            margin: 0 auto;
+            width: 600px;
+        }
+        #tbl{
+            position: fixed;
+            left: 200px;
+            top: 300px;
+            z-index: 30;
+        }
+        .imgC{
+            position: relative;
+            left: 100px;
+            top: 200px;
+        }
+        #top_arrow{
+            position: fixed;
+            right: 10px;
+            bottom: 10px;
+            border-width: 0px;
+        }
+        .imgE{
+            position: absolute;
+            left: 300px;
+            top: 400px;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body >
+    <h2><a name="first">포지션</a></h2>
+    <div>
+        옵션 : static, relative, absolute, fixed
+    </div>
+    <a href="#first">
+        <img src="../../images/html002.jpg" id="top_arrow" width="60px" height="60px" />
+    </a>
+    <h2>표에 스타일 적용하기</h2>
+    <div>
+        <table id="tbl">
+            <tr class="aa">
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+            </tr>
+            <tr class="bb">
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+            </tr>
+            <tr class="aa">
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+            </tr>
+            <tr class="bb">
+                <td>31</td>
+                <td>32</td>
+                <td>33</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <img src="../../images/html001.jpg" width="200px" class="imgA imgB" title="imgB"/>
+        <img src="../../images/html001.jpg" width="200px" class="imgA imgC"/>
+        <img src="../../images/html001.jpg" width="200px" class="imgA imgE"/>
+        <img src="../../images/html001.jpg" width="200px" class="imgA"/>
+        <p class="dd">
+            <img src="../../images/html001.jpg" width="200px" class="imgD"/>
+        </p>
+    </div>
+    <div>
+        <p>배경 그림연습</p>
+        <p>배경 그림연습</p>
+        <p style="text-align: center;">배경 그림연습</p>
+        <p>배경 그림연습</p>
+        <p>배경 그림연습</p>
+        <p>배경 그림연습</p>
+        <p>배경 그림연습</p>
+        <p>배경 그림연습</p>
+        <p>배경 그림연습</p>
+        <p>배경 그림연습</p>
+        <p>배경 그림연습</p>
+        <p>배경 그림연습</p>
+        <p>배경 그림연습</p>
+        <p>배경 그림연습</p>
+        <p>배경 그림연습</p>
+        <p>배경 그림연숩</p>
+        <p>배경 그림연습</p>
+        <p>배경 그림연습</p>
+        <p>배경 그림연습</p>
+        <p>배경 그림연습</p>
+        <p>배경 그림연습</p>
+        <p>배경 그림연습</p>
+        <p>배경 그림연습</p>
+        <p>배경 그림연습</p>
+        <p>배경 그림연습</p>
+        <p>배경 그림연습</p>
+        <p>배경 그림연습</p>
+        <p>배경 그림연습</p>
+        <p>배경 그림연습</p>
+        <p>배경 그림연습</p>
+        <p>배경 그림연습</p>
+        <p>배경 그림연습</p>
+    </div>
+</body>
+</html>
