@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    font-size: 0.8em;
+}
+.container{
+    background-color: bisque;
+    height: 100vh;
+    display: flex;
+
+    /*기본 방향(행 기준)*/
+    /* flex-direction: row;  */
+
+    /* flex-direction: column; */
+    /* flex-direction: row-reverse; */
+    /* flex-wrap: wrap; */
+    /* flex-wrap: wrap-reverse; */
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /* justify-content: flex-end; */
+    
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    justify-content: space-evenly;
+
+    align-items: center;
+}
+
+.item{
+    width: 70px;
+    height: 70px;
+    border: 1px solid gray;
+    text-align: center;
+}
+
+.item:nth-child(1){
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+}
+
+.item1 {background-color: rgb(255, 206, 222);}
+.item2 {background-color: rgb(255, 169, 198);}
+.item3 {background-color: rgb(255, 138, 177);}
+.item4 {background-color: rgb(255, 121, 166);}
+.item5 {background-color: rgb(255, 98, 151);}
+.item6 {background-color: rgb(255, 80, 138);}
+.item7 {background-color: rgb(255, 70, 132);}
+.item8 {background-color: rgb(255, 40, 112);}
+.item9 {background-color: rgb(255, 25, 102);}
+.item10 {background-color: rgb(255, 0, 85);}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test25_반응형웹사이트.html</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 1000px;
+            margin: 0 auto;
+            font-size: 20px;
+        }
+        div{
+            background-color: #eee;
+            border: 2px solid gray;
+            font-size: 25px;
+        }
+        div#area{
+            width: 960px;
+            margin: 0 auto;
+            height: 350px;
+            background-color: blueviolet;
+        }
+        #tb1{
+            width: 960px;
+            margin: 0 auto;
+            height: 350px;
+            background-color: rgb(191, 160, 221);
+            border-collapse: collapse;
+        }
+        th, td{
+            border: 1px solid #bbb;
+            text-align: center;
+        }
+        div#img{
+            text-align: center;
+            margin: 10px;
+        }
+
+        /*미디어 쿼리
+        screen width >= 1024px (max-width :1024px)*/
+        @media screen and (max-width :1024px){
+            .container{
+            width: 700px;
+            margin: 0 auto;
+            font-size: 15px;
+            }
+            div{
+                background-color: #eee;
+                border: 2px solid gray;
+                font-size: 20px;
+            }
+            div#area{
+                width: 680px;
+                margin: 0 auto;
+                height: 350px;
+                background-color: rgb(58, 120, 255);
+            }
+            #tb1{
+                width: 680px;
+                margin: 0 auto;
+                height: 250px;
+                background-color: rgb(191, 160, 221);
+                border-collapse: collapse;
+            }
+            div#img{
+                width: 680px;
+            }
+        }
+        @media screen and (max-width :768px){
+            .container{
+            width: 480px;
+            margin: 0 auto;
+            font-size: 13px;
+            }
+            div{
+                background-color: #eee;
+                border: 2px solid gray;
+                font-size: 16px;
+            }
+            div#area{
+                width: 400;
+                margin: 0 auto;
+                height: 260px;
+                background-color: rgb(58, 120, 255);
+            }
+            #tb1{
+                width: 400;
+                margin: 0 auto;
+                height: 250px;
+                background-color: rgb(191, 160, 221);
+                border-collapse: collapse;
+            }
+            div#img{
+                width: 460px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 style="text-align: center;">미디어 쿼리 연습</h2>
+        <p style="text-align: right;">반응형 웹샅이트 : Responsive wep Design</p>
+        <hr/>
+        <ul>
+            <li>데스크탑 : 1024px 이상</li>
+            <li>태블릿 : 768px ~ 1024px</li>
+            <li>모바일 : 768px 이하</li>
+        </ul>
+        <hr/>
+        <div>이곳은 반응형 웹사이트를 위한 화면입니다</div>
+        <hr/>
+        <div id="area">-</div>
+        <hr/>
+        <table id="tb1">
+            <tr>
+                <th>주제</th>
+                <th>주제</th>
+                <th>주제</th>
+            </tr>
+            <tr>
+                <th>웹표준에 대하여</th>
+                <th>주제</th>
+                <th>주제</th>
+            </tr>
+            <tr>
+                <th>JAVA 프로그래밍</th>
+                <th>주제</th>
+                <th>주제</th>
+            </tr>
+        </table>
+        <hr/>
+        <div id="img">
+            <img src="../../images/html002.jpg" />
+        </div>
+    </div>
+</body>
+</html>

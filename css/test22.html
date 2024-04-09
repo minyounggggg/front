@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>디스플레이ㅣㅣ</title>
+    <style>
+        .aaa1 .aaa2 .aaa3{
+            background-color: pink;
+            display: inline;
+        }
+        .aaa4{
+            background-color: cadetblue;
+            visibility: hidden;
+        }
+        .aaa5 .aaa6 .aaa7{
+            background-color: orange;
+            border:  1px solid gray;
+            width: 400px;
+        } 
+        .bb1{
+            /* display: inline; */
+            display: block;
+        }
+        .bb1:hover{
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <h2>Display 속성</h2>
+    <p>각각의 요소들을 어떻게 보여줄지를 결정한다.</p>
+    <p>
+        속성처리 : visibility(기본값:보이기) / hidden(감추기) / inherit(부모요소의 값을 상속받아서 사용)
+    </p>
+    <p>
+        <b>Display 속성</b>
+        none : <span>화면</span>에서 완전히 사라지게 한다.<br />
+    </p>
+    <hr/>
+    <h3>사ㅛ용 예제</h3>
+    <div class="aaa1">1. 안녕</div>
+    <div class="aaa2">1. 안녕</div>
+    <div class="aaa3">1. 안녕</div>
+    <div class="aaa4">1. 안녕</div>
+    <hr/>
+    <h2>Block . InLine . InLin-Block</h2>
+    <div class="aaa5">
+        5.<font color="red" class="bb1">안녕 inline</font>
+    </div>
+    <div class="aaa6">
+        6.<span class="bb2"><font color="blue">안녕 inline-block</font></span>
+    </div>
+    <div class="aaa7">
+        7.<font color="brown" class="bb3">안녕 bolck</font>
+    </div>
+</body>
+</html>
