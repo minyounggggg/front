@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        'use strict';
+
+        function calc(){
+            let su = prompt("수를 입력하세요");
+            // let res = su + 100;
+            // let res = parseInt(su) +100;
+            // let res = Number(su) +100;
+            let res = eval(su) +100;
+            alert("res : "+ res);
+        }
+    </script>
+</head>
+<body>
+    <h2>본문입니다.</h2>
+    <p>
+        <input type="button" value="계산" onclick="calc()" />
+    </p>
+</body>
+</html>

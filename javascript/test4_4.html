@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test4.html</title>
+    <script>
+        document.write("안녕111<br/>");
+        
+        atom1();
+        function atom1(){
+            // document.write("atom1 함수 : 안녕222<br/>");
+            alert("atom1 함수 : 안녕222")
+        }
+
+        atom2();
+        function atom2(){
+            // document.write("atom1 함수 : 안녕222<br/>");
+            alert("atom1 함수 : 안녕3333")
+        }
+
+        function atom5(su, str){
+            // document.write("atom1 함수 : 안녕222<br/>");
+            alert("su : " + su + "  , str : " + str);
+        }
+        function atom6(){
+            let su = 2000;
+            let str = "반갑습니다."
+            alert("su : " + su + "  , str : " + str);
+        }
+
+        
+
+        </script>
+</head>
+<body>
+    <h2>이곳은 본문입니다.</h2>
+    <tyep="button" value="atom2" onclick="atom2()" />
+
+    <button tyep="button" onclick="atom2()">atom2호출</button>
+    <button tyep="button" onclick="atom3()">atom3호출</button>
+    <button tyep="button" onclick="atom4(500)">atom4호출</button>
+    <button tyep="button" onclick="atom5(500, '안녕')">atom5호출</button>
+    <button tyep="button" onclick="atom6()">atom6호출</button>
+    
+    <script>
+        function atom2(){
+            document.write("안녕333<br/>");
+            alert("atom2함수 : 안녕333");
+
+        }
+        function atom3(){
+            atom1();
+            atom2();
+            atom3("작업졸ㅇ료");
+        }
+    </script>
+</body>
+</html>
