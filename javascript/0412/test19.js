@@ -19,7 +19,7 @@ function regexCheck() {
   const regex22 = /\d/g;      // 숫자를 포함하고 있느냐?
   const regex23 = /\D/g;      // 숫자를 포함하고 있지 않느냐?
   const regex24 = /\w/g;      // 영문자/숫자/_ 을 포함하고 있느냐?
-  const regex25 = /\W/g;      // 영문자/숫자/_ 만 포함하고 있느냐?
+  const regex25 = /\W/g;      // 영문자/숫자/_ 를 제외한것을 모두 포함하고있냐?
   const regex26 = /\s/g;      // 문장안에 공백(탭포함)을 포함하고 있느냐?
 
   let content = document.getElementById("content").value.trim();
